@@ -1,0 +1,14 @@
+<!-- HTML5 Exercise 7 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Video Invite with Media Events</title>
+  <style>#welcomeBanner,.highlight{background:#dbeafe;color:#1e3a8a;padding:10px}table{border-collapse:collapse}td{border:1px solid #999;padding:8px}</style>
+</head>
+<body>
+<header><div class="inner"><h1>Local Community Event Portal</h1><nav><a href="#home">Home</a><a href="#events">Events</a><a href="#contact">Contact</a><a href="help.html" target="_blank">Help</a></nav></div></header><main id="home"><h2>7. Video Invite with Media Events</h2><video controls width="420" oncanplay="message.textContent='Video ready to play'"><source src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4" type="video/mp4"></video><p id="message"></p><script>window.onbeforeunload=function(){return 'Leave this unfinished page?'};</script></main><section id="events"><h2>Community Events</h2><p>Browse upcoming local events and register online.</p></section><footer id="contact">Community Services Desk</footer>
+
+</body>
+</html>

@@ -1,0 +1,14 @@
+<!-- HTML5 Exercise 8 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Saving User Preferences</title>
+  <style>#welcomeBanner,.highlight{background:#dbeafe;color:#1e3a8a;padding:10px}table{border-collapse:collapse}td{border:1px solid #999;padding:8px}</style>
+</head>
+<body>
+<header><div class="inner"><h1>Local Community Event Portal</h1><nav><a href="#home">Home</a><a href="#events">Events</a><a href="#contact">Contact</a><a href="help.html" target="_blank">Help</a></nav></div></header><main id="home"><h2>8. Saving User Preferences</h2><select id="pref"><option>Music</option><option>Technology</option><option>Sports</option></select><button id="save">Save Preference</button><button id="clear">Clear Preferences</button><p id="saved"></p><script>pref.value=localStorage.getItem('eventType')||'Music';saved.textContent='Current: '+pref.value;save.onclick=function(){localStorage.setItem('eventType',pref.value);sessionStorage.setItem('lastVisit',Date.now());saved.textContent='Saved: '+pref.value};clear.onclick=function(){localStorage.clear();sessionStorage.clear();saved.textContent='Preferences cleared'};</script></main><section id="events"><h2>Community Events</h2><p>Browse upcoming local events and register online.</p></section><footer id="contact">Community Services Desk</footer>
+
+</body>
+</html>

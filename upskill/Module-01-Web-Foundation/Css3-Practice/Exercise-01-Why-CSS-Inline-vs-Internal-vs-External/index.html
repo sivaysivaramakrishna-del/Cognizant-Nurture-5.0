@@ -1,0 +1,21 @@
+<!-- CSS3 Exercise 1 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Why CSS? Inline vs. Internal vs. External</title>
+  <style>
+    .internal-note {
+      background: #fef3c7;
+      border-left: 4px solid #f59e0b;
+      padding: 8px 12px;
+    }
+  </style>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header id="mainHeader"><h1 class="exercise-title">Local Community Event Portal</h1><nav><a href="#">Home</a><a href="#">Events</a><a href="#">Register</a></nav></header><main><section class="eventCard"><h2>Why CSS? Inline vs. Internal vs. External</h2><p class="internal-note">Internal CSS styles this note using a &lt;style&gt; block in the head.</p><p style="color:#1d4ed8;font-weight:bold;">Inline CSS styles this sentence directly on the element.</p><p>This page also uses external CSS from styles.css for layout and cards.</p><ul class="nav-list"><li>Workshop</li><li>Meetup</li><li>Festival</li></ul></section><table class="event-table"><tr><th>Event</th><th>City</th></tr><tr><td>Tech Meetup</td><td>New York</td></tr><tr><td>Health Camp</td><td>Chicago</td></tr></table><section class="news">Community updates include public events, volunteer drives, learning sessions, and neighborhood services designed for every resident.</section><form><input placeholder="Inspect focus outline"></form></main>
+
+</body>
+</html>

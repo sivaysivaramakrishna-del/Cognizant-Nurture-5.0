@@ -1,0 +1,14 @@
+<!-- HTML5 Exercise 6 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Event Feedback with Events Handling</title>
+  <style>#welcomeBanner,.highlight{background:#dbeafe;color:#1e3a8a;padding:10px}table{border-collapse:collapse}td{border:1px solid #999;padding:8px}</style>
+</head>
+<body>
+<header><div class="inner"><h1>Local Community Event Portal</h1><nav><a href="#home">Home</a><a href="#events">Events</a><a href="#contact">Contact</a><a href="help.html" target="_blank">Help</a></nav></div></header><main id="home"><h2>6. Event Feedback with Events Handling</h2><form><input id="phone" placeholder="Phone"><select id="fee"><option value="Free">Workshop</option><option value="10">Concert</option></select><button id="confirm" type="button">Confirm</button><textarea id="feedback" placeholder="Feedback"></textarea><p id="status"></p><img id="eventPhoto" src="https://picsum.photos/seed/feedback/240/130" alt="event"></form><script>phone.onblur=function(){status.textContent=phone.value.length>=10?'Phone accepted':'Enter 10 digits'};fee.onchange=function(){status.textContent='Fee: '+fee.value};confirm.onclick=function(){status.textContent='Submission confirmed'};eventPhoto.ondblclick=function(){eventPhoto.style.width='360px'};feedback.onkeyup=function(){status.textContent='Characters: '+feedback.value.length};</script></main><section id="events"><h2>Community Events</h2><p>Browse upcoming local events and register online.</p></section><footer id="contact">Community Services Desk</footer>
+
+</body>
+</html>

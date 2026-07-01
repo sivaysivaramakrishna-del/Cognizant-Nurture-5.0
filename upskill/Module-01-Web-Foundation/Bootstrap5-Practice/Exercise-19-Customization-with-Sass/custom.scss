@@ -1,0 +1,19 @@
+// Bootstrap 5 Sass customization source
+// Compile with: sass custom.scss styles.css
+
+$primary: #0d6efd;
+$secondary: #6c757d;
+$border-radius: 0.75rem;
+
+.card {
+  border-radius: $border-radius;
+}
+
+.btn-primary {
+  background-color: $primary;
+  border-color: darken($primary, 8%);
+}
+
+.btn-secondary {
+  background-color: $secondary;
+}
